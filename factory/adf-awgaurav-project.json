@@ -1,0 +1,9 @@
+{
+	"name": "adf-awgaurav-project",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b912bd41-0b50-4ec0-af2d-3f76fb82d5e7",
+		"tenantId": "a681ada3-4c8b-48e0-b671-a138a256704f"
+	}
+}
