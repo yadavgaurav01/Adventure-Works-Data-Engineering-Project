@@ -8,9 +8,6 @@
 		"parameters": {
 			"p_relnew_url": {
 				"type": "String"
-			},
-			"p_relnew_file": {
-				"type": "String"
 			}
 		},
 		"annotations": [],
