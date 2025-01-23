@@ -1,0 +1,33 @@
+{
+	"name": "ReadMultipleCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "httplinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_relnew_url": {
+				"type": "String"
+			},
+			"p_relnew_file": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().p_relnew_url",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
